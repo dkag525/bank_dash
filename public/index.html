@@ -27,5 +27,23 @@
   </head>
   <body>
     <div id="root"></div>
+
+    <!-- {imageArray.map((item) => (
+      <div
+        onClick={() => handleclick(item)}
+        key={item.id}
+        className="Sidebox1"
+      >
+        <div
+          className={details === item.name ? "leftBoarder" : "rightBoarder"}
+        ></div>
+        <img
+          className="SideNavImage"
+          src={details === item.name ? item.imageblue : item.image}
+          alt={`${item.name}_icon`}
+        />
+        <h4 className="SidebarMenu">{item.name}</h4>
+      </div>
+    ))} -->
   </body>
 </html>
