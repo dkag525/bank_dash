@@ -1,0 +1,13 @@
+.navbar-container {
+  width: calc(100vw - 15.625rem);
+  height: 6.313rem;
+  border: 1px solid blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  border: 1px solid red;
+  height: 3.75rem;
+}
