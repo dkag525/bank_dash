@@ -4,6 +4,9 @@ import Chip_Card from "../../assets/svg/Chip_Card.svg";
 import Chip_Card2 from "../../assets/svg/Chip_Card2.svg";
 import Circle_icon from "../../assets/svg/Circle_icon1.svg";
 import Circle_icon2 from "../../assets/svg/Circle_icon2.svg";
+import Deposite_icon_1 from "../../assets/svg/deposite_icon_1.svg";
+import Deposite_icon_2 from "../../assets/svg/deposite_icon_2.svg";
+import Deposite_icon_3 from "../../assets/svg/deposite_icon_3.svg";
 
 const DashBoardPage = () => {
   const AtmCardDetails = [
@@ -65,72 +68,40 @@ const DashBoardPage = () => {
     },
   ];
 
+  const TranSactionDetails = [
+    {
+      id: 1,
+      img: Deposite_icon_1,
+      depositeFrom: "Deposite from my Card",
+      depositeDate: "28 January 2021",
+      depositeAmount: "-$582",
+    },
+    {
+      id: 2,
+      img: Deposite_icon_2,
+      depositeFrom: "Deposite Paypal",
+      depositeDate: "25 January 2021",
+      depositeAmount: "-$2,500",
+    },
+    {
+      id: 3,
+      img: Deposite_icon_3,
+      depositeFrom: "Jemi Wilson",
+      depositeDate: "21 January 2021",
+      depositeAmount: "-$5,400",
+    },
+  ];
+
   return (
     <div className="middle-container-topSection">
-      <div className="ATM-Card-Section">
-        <div className="Head-Section">
-          <div className="Head-Section-left">
-            <h4 className="mycards inter primary-color">My Cards</h4>
-          </div>
-          <div className="Head-Section-right">
-            <h5 className="SeeAll inter primary-color">See All</h5>
-          </div>
+      <div className="atm-card-left-container">
+        <div className="Heading-Bar-Sec">
+          <div className="my-cards font-weight-600-22px">My Cards</div>
+          <div className="see-all font-weight-600-17px">See All</div>
         </div>
-        <div className="ATM-Card-Parrent">
-          <div className="ATM-Card">
-            {AtmCardDetails.map((el, i) => {
-              return (
-                <div className="Complete-ATM-Card" key={i}>
-                  <div className="ATM-Card-1 primary-background">
-                    <div className="ATM-Card-Top-Sec">
-                      <div className="Balance-Sec lato">
-                        <div className="Balance">Balance</div>
-                        <div className="price">$5,756</div>
-                      </div>
-                      <div>
-                        <img
-                          className="Chip-Card_icon"
-                          src={Chip_Card}
-                          alt="Chip-Card_icon"
-                        />
-                      </div>
-                    </div>
-                    <div className="ATM-Card-mid-Sec lato">
-                      <div>
-                        <div className="Card-holder card-details">
-                          CARD HOLDER
-                        </div>
-                        <div className="Card-holder-name Crd-delails">
-                          Eddy Cusuma
-                        </div>
-                      </div>
-                      <div>
-                        <div className="Valid-Thru card-details">
-                          VALID THRU
-                        </div>
-                        <div className="Valid-date Crd-delails">12/22</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="ATM-Card-bottom-Sec">
-                    <div className="ATM-Card-Number lato">
-                      3778**** ****1234
-                    </div>
-                    <div className="circle_image">
-                      <img
-                        className="Circle_icon"
-                        src={Circle_icon}
-                        alt="Circle_icon"
-                      />
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
+        <div className="ATM">C</div>
       </div>
-      <div className="Recent-Transaction-Section">Z</div>
+      <div className="atm-card-right-container">m</div>
     </div>
   );
 };
