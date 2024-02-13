@@ -1,28 +1,44 @@
-.middle-container-topSection {
-  border: 1px solid black;
+.container {
+  width: 100%;
+}
+
+.financial-detail-section {
   width: 100%;
   display: flex;
-  gap: 1.875rem;
+  gap: 10px;
 }
 
-.atm-card-left-container {
-  border: 1px solid red;
-  flex: 3;
+.my-cards {
+  /* flex: 2; */
+  width: 70%;
 }
 
-.atm-card-right-container {
-  border: 1px solid blue;
-  flex: 1;
-}
-
-.Heading-Bar-Sec {
-  border: 1px solid hotpink;
+.card-header {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1.25rem;
 }
 
-.ATM {
-  border: 1px solid green;
+.my-cards-body {
+  width: 100%;
+  overflow-x: scroll;
+}
+.card-scroller {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+.cards {
+  flex: 0 0 auto; /* Disable flex shrink and growth */
+  min-width: 200px; /* Minimum width */
+  min-height: 100px; /* Minimum height */
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.my-transaction {
+  /* flex: 1; */
+  width: 30%;
 }

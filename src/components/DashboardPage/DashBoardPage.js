@@ -93,15 +93,26 @@ const DashBoardPage = () => {
   ];
 
   return (
-    <div className="middle-container-topSection">
-      <div className="atm-card-left-container">
-        <div className="Heading-Bar-Sec">
-          <div className="my-cards font-weight-600-22px">My Cards</div>
-          <div className="see-all font-weight-600-17px">See All</div>
+    <div className="container">
+      <div className="financial-detail-section">
+        <div className="my-cards">
+          <div className="card-header">
+            <h2>My Cards</h2>
+            <span>See All</span>
+          </div>
+          <div className="my-cards-body">
+            <div className="card-scroller">
+              <div className="cards"></div>
+              <div className="cards"></div>
+              <div className="cards"></div>
+              <div className="cards"></div>
+              <div className="cards"></div>
+              <div className="cards"></div>
+            </div>
+          </div>
         </div>
-        <div className="ATM">C</div>
+        <div className="my-transaction"></div>
       </div>
-      <div className="atm-card-right-container">m</div>
     </div>
   );
 };

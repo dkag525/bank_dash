@@ -10,7 +10,7 @@ function App() {
       <div>
         <LeftNavBar />
       </div>
-      <div>
+      <div style={{ width: "calc(100% - 250px)" }}>
         <TopNavBar />
         <div className="middle-container">
           <Routes>
